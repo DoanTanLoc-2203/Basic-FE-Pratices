@@ -1,0 +1,133 @@
+@charset "UTF-8";
+body {
+  background-color: #121214;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 1263px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 254px;
+  background-image: url("../image/pic_header.jpg");
+}
+
+.menu {
+  padding-left: 70px;
+  position: absolute;
+  top: 195px;
+  display: flex;
+}
+.menu__item {
+  width: auto;
+  margin-right: 6px;
+}
+.menu__item h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 17px;
+  text-align: center;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  padding-bottom: 28px;
+  margin-top: 114px;
+  margin-left: 70px;
+  margin-right: 521px;
+  border-bottom: 1px dotted #2c2c2c;
+}
+.content__slide {
+  width: 235px;
+  height: fit-content;
+  background-color: #1f1f1f;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  font-weight: normal;
+  color: #595959;
+  padding-bottom: 25px;
+}
+.content__slide p {
+  margin-top: 43px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-left: 11px;
+  padding-bottom: 65px;
+  border-top: solid 1px #7e7e7e;
+  border-bottom: solid 1px #222223;
+}
+.content__slide__item::before {
+  content: "▸";
+  text-decoration: none;
+}
+.content__slide__item {
+  margin-left: 40px;
+  margin-bottom: 6px;
+}
+.content__slide__item a {
+  color: #595959;
+}
+.content__news {
+  width: 400px;
+  height: auto;
+  padding-left: 38px;
+  padding-top: 42px;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2px;
+  font-weight: normal;
+  color: #595959;
+}
+.content__news__item {
+  margin-bottom: 35px;
+}
+.content__news__item__empty {
+  width: 115px;
+  height: 19px;
+  background-color: #2c2c2c;
+  margin-top: 16px;
+  margin-left: 15px;
+}
+.content__news__item p {
+  margin-left: 15px;
+  margin-top: 9px;
+  margin-right: 14px;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+  border-bottom: 1px dotted #222223;
+}
+.content__news__item__launch {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.content__news__item__launch a:before {
+  content: url("../image/pic_icon-arrow.png");
+  margin-right: 7px;
+}
+.content__news__item__launch a {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.2px;
+  color: #595959;
+  margin-top: 22px;
+  margin-left: 77px;
+}

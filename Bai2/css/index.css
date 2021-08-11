@@ -1,0 +1,195 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.background__content__getnews__message {
+    margin-top: 4px;
+}
+
+.background__content__getnews__message h3 {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: .4px;
+}
+
+.background__content__getnews__message p {
+    border: 1px solid #595959;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-bottom: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    background: white;
+}
+
+.background__content__getnews__detail--text {
+    margin-top: 22px;
+    margin-left: 22px;
+}
+
+.background__content__getnews__detail--text p {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: .9px;
+}
+
+.background__content__getnews__detail--text h3 a {
+    font-size: 12px;
+    color: #0a6395;
+    font-weight: 100;
+    margin-top: 5px;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+}
+
+.background__content__getnews__detail {
+    display: flex;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #595959;
+    background: white;
+}
+
+.background__content__getnews {
+    width: 296px;
+    height: auto;
+    margin: 16px 9px 0 11px;
+}
+
+.background__content__horoscopes__banner {
+    position: relative;
+}
+
+.background__content__horoscopes__banner--content {
+    position: absolute;
+    top: 11px;
+    left: 22px;
+}
+
+.background__content__horoscopes__banner--content p {
+    font-size: 11px;
+}
+
+.background__content__horoscopes__banner--content a {
+    font-size: 11px;
+    color: #0a6395;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.background__content__horoscopes__detail--text {
+    margin-left: 21px;
+    margin-top: 1px;
+}
+
+.background__content__horoscopes__detail--text h3 {
+    font-size: 15px;
+}
+
+.background__content__horoscopes__detail--text h4 {
+    font-size: 11px;
+    color: #595959;
+    font-weight: 100;
+}
+
+.background__content__horoscopes__detail--text p {
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: 9px;
+    margin-left: 3px;
+    padding-right: 7px;
+}
+
+.background__content__horoscopes__detail {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-bottom: 15px;
+    background: white;
+}
+
+.background__content__horoscopes {
+    width: 296px;
+    height: auto;
+    margin: 6px 9px 0 11px;
+}
+
+.background__content__blogroll__message {
+    font-size: 12px;
+    color: #0a6395;
+    width: 100%;
+    background: #f9f1c2;
+    line-height: 37px;
+    border-bottom: 1px solid white;
+}
+
+.background__content__blogroll__message p {margin-left: 8px;}
+
+.background__content__blogroll__detail {
+    padding: 7px 18px 8px 7px;
+    background: white;
+    display: flex;
+}
+
+.background__content__blogroll__detail--text {
+    line-height: 15px;
+    padding-left: 7px;
+    letter-spacing: .2px;
+}
+
+.background__content__blogroll__detail--text h3 {
+    font-size: 12px;
+    color: #0A6395;
+}
+
+.background__content__blogroll__detail--text p {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+hr.title__hr {
+    border: none;
+    border-bottom: 4px solid #f7a418;
+}
+
+body{
+  background: black;
+}
+
+.background{
+  width: 363px;
+  height: 774px;
+  background: white;
+  margin: auto;
+  position: relative;
+}
+
+.background__content{
+  width: 316px;
+  height: 740px;
+  background: #e6f3fb;
+  margin-left: 22px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  margin-top: 16px;
+  position: absolute;
+  top: 0;
+}
+
+.background__content__blogroll{
+  width: 296px;
+  height: auto;
+  margin: 6px 9px 0 11px;
+}
+
+.title{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 15px;
+}
+
