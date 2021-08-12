@@ -1,0 +1,53 @@
+body {
+  display: flex;
+}
+
+#cylinder-graph {
+  border: 2px solid black;
+}
+
+.controller {
+  width: 800px;
+  height: 800px;
+}
+.controller h1 {
+  text-align: center;
+}
+.controller__input {
+  font-size: 20px;
+  margin-left: 70px;
+}
+.controller__input input {
+  font-size: 15px;
+  width: 300px;
+  height: 30px;
+}
+.controller__color {
+  font-size: 20px;
+  margin-left: 70px;
+}
+.controller__color__item:hover {
+  cursor: pointer;
+}
+.controller__color__item {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.controller__color__item--red {
+  background-color: red;
+  color: #940505;
+}
+.controller__color__item--green {
+  background-color: #2bf338;
+  color: #017a09;
+}
+.controller__color__item--blue {
+  background-color: #0e34f1;
+  color: #091c79;
+}
+.controller__color__item--yellow {
+  background-color: #eeff00;
+  color: #9aa503;
+}

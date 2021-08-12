@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="cylinder-graph" width="800px" height="800px"></canvas>
+  <div class="controller">
+    <h1>Bảng điều khiển</h1>
+    <div class="controller__input">
+      <p>Tên biểu đồ:</p>
+      <input type="text" name="tenbieudo" value="BIỂU ĐỒ TỔNG QUAN KHUNG NĂNG LỰC">
+    </div>
+    <div class="controller__input">
+      <p>Nội dung hoàn thành:</p>
+      <input type="text" name="nd1" value="ĐÃ ĐẠT">
+    </div>
+    <div class="controller__input">
+      <p>Nội dung chưa hoàn thành:</p>
+      <input type="text" name="nd2" value="CHƯA ĐẠT">
+    </div>
+    <div class="controller__input">
+      <p>Giá trị:</p>
+      <input type="text" name="giatri" value="30">
+    </div>
+    <div class="controller__color">
+      <div class="controller__color__nd1">
+        <p>Màu cho nội dung 1: </p>
+        <div class="controller__color__item controller__color__item--red"></div>
+        <div class="controller__color__item controller__color__item--green"></div>
+        <div class="controller__color__item controller__color__item--blue"></div>
+        <div class="controller__color__item controller__color__item--yellow"></div>
+      </div>
+      <div class="controller__color__nd2">
+        <p>Màu cho nội dung 2: </p>
+        <div class="controller__color__item controller__color__item--red"></div>
+        <div class="controller__color__item controller__color__item--green"></div>
+        <div class="controller__color__item controller__color__item--blue"></div>
+        <div class="controller__color__item controller__color__item--yellow"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./js/data.js"></script>
+</body>
+</html>
