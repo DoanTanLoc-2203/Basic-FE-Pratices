@@ -1,0 +1,52 @@
+#col-graph {
+  border: 2px solid black;
+}
+
+.controller {
+  display: flex;
+}
+.controller__input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.controller__input i:hover {
+  cursor: pointer;
+}
+.controller__input__col {
+  position: absolute;
+  background-color: antiquewhite;
+  padding: 10px;
+  top: 34px;
+  display: none;
+}
+.controller__input__col__item {
+  margin-bottom: 2px;
+}
+.controller__input__col__item input {
+  width: 40px;
+}
+.controller__color {
+  display: flex;
+}
+.controller__color__item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.controller__color__item {
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  margin-right: 2px;
+}
+.controller__color__item--red {
+  background-color: red;
+}
+.controller__color__item--green {
+  background-color: green;
+}
+.controller__color__item--blue {
+  background-color: blue;
+}
+.controller__color__item--yellow {
+  background-color: yellow;
+}

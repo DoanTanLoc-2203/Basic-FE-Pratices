@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="controller">
+    <div class="controller__input">
+      <label for="">Tên biều đồ: </label>
+      <input type="text" name="namebd" value="BIỂU ĐỒ LỊCH SỬ LEVEL OF POSITION">
+    </div>
+    <div class="controller__input">
+      <label for="">Tên dự án: </label>
+      <input type="text" name="nameda" value="TÊN DỰ ÁN">
+    </div>
+    <div class="controller__input">
+      <label for="">Tên giá trị: </label>
+      <input type="text" name="namegt" value="LEVEL OF POSITION">
+    </div>
+    <div class="controller__input">
+      <label for="">Giá trị tối đa: </label>
+      <input type="number" name="maxy" min="1" max="12" value="10">
+    </div>
+    <div class="controller__input">
+      <label for="">Số cột: </label>
+      <input type="number" name="maxx" min="1" max="12" value="5">
+    </div>
+    <div class="controller__input">
+      <label for="">Giá trị các cột: </label>
+      <i class="far fa-caret-square-down" id="dropdown"></i>
+      <div class="controller__input__col">
+      </div>
+    </div>
+    <div class="controller__color">
+      <label for="">Màu: </label>
+      <div class="controller__color__item controller__color__item--red"></div>
+      <div class="controller__color__item controller__color__item--green"></div>
+      <div class="controller__color__item controller__color__item--blue"></div>
+      <div class="controller__color__item controller__color__item--yellow"></div>
+    </div>
+  </div>
+  <canvas id="col-graph" width="1900px" height="900px"></canvas>
+  <script type="module" src="./js/data.js"></script>
+</body>
+</html>
