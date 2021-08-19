@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <title>Document</title>
 </head>
 <body>
@@ -31,12 +33,12 @@
     </div>
     <div class="navbar">
       <div class="container--iner">
-        <ul>
-          <span></span>
+        <div class="ipad-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul id="navbar">
           <li><a href="">HOME</a></li>
-          <span></span>
           <li><a href=""> 店舗紹介</a></li>
-          <span></span>
           <li>
             <a href="">エステ</a>
             <ul class="dropdown">
@@ -46,7 +48,6 @@
               <li><a href="">美肌再生プログラム</a></li>
             </ul>
           </li>
-          <span></span>
           <li>
             <a href="">ヘアクリニック</a>
             <ul class="dropdown">
@@ -54,20 +55,18 @@
               <li><a href="">症例</a></li>
             </ul>
           </li>
-          <span></span>
           <li><a href="">よくあるご質問</a></li>
-          <span></span>
           <li><a href="">お客様の声</a></li>
-          <span></span>
           <li><a href="">アクセス</a></li>
-          <span></span>
         </ul>
       </div>
     </div>
     <div class="image-slide">
       <div class="container--iner">
-        <img src="./image/pic_header-1.png" alt="">
-        <p>皆様の美（ビューティー）をサポート </p>
+        <div class="slide">
+          <div><img src="./image/pic_header-1.png" alt=""></div>
+          <div><img src="./image/pic_header-2.png" alt=""></div>
+        </div>
       </div>
     </div>
     <div class="content">
@@ -80,7 +79,7 @@
                 <img src="./image/pic_content-1.png" alt="">
               </div>
               <div class="content__news__iner__text">
-                  <p>Feminine （フェミニン） では、 フェイシャル・ボディトリートメントを通して 「女性らしく」 をテーマに皆様の美 （ビューティー） をサポートします</p>
+                  <p>Feminine （フェミニン） では、 フェイシャル・ボディトリートメントを通して 「女性らしく」 をテーマに皆様の美 （ビューティー） をサポートします。</p>
                   <div class="list">
                     <h4>下記、安心のお約束を致します。</h4>
                     <ul>
@@ -150,11 +149,6 @@
         <div class="content__slide">
           <div class="content__slide__block-1">
             <img src="./image/pic_slide-1.png" alt="">
-            <div class="content__slide__block-1__text">
-              <h3>脱毛</h3>
-              <p>あなたは今の脱毛に満足していますか？他店で満足いかなかった方の <span style="color: red;">満足度</span> が違います！！</p>
-            </div>
-
           </div>
           <div class="content__slide__block-2">
             <div class="content__slide__block-2__content">
@@ -180,17 +174,9 @@
           </div>
           <div class="content__slide__block-3">
             <img src="./image/pic_slide-2.png" alt="">
-            <p>キャンペーン</p>
           </div>
           <div class="content__slide__block-4">
             <img src="./image/pic_slide-3.png" alt="">
-            <div class="content__slide__block-4__text">
-              <h3>採用情報</h3>
-              <p>エステティシャン募集中！！！</br>
-                働きやすい環境で一緒に</br>
-                働きませんか？
-              </p>
-            </div>
           </div>
           <div class="content__slide__block-5">
             <div class="content__slide__block-5__content">
@@ -255,5 +241,26 @@
       <p class="footer__text">Copyright　Feminine（フェミニン）　All Rights Reserved.</p>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        prevArrow: false,
+        nextArrow: false
+      });
+    });
+    $('.ipad-menu i').click(function () { 
+      if($('#navbar').css("display") == "block")
+        $('#navbar').css("display", "none");
+      else
+      $('#navbar').css("display", "block");
+    });
+  </script>     
 </body>
 </html>

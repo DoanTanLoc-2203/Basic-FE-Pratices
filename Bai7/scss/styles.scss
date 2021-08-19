@@ -19,7 +19,8 @@ body{
 }
 
 .container{
-  max-width: 1300px;
+  max-width: 100vw;
+  width: 100%;
   height: auto;
   margin: auto;
   border-top: 3px solid #f0831e;
@@ -70,18 +71,16 @@ body{
   border-bottom: 1px solid #ccc6c2;
   padding-top: 5px;
   padding-bottom: 5px;
+  & .ipad-menu{
+    display: none;
+  }
   & ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     font-size: 15px;
     font-weight: bold;
     padding: 0;
-    & span{
-      display: flex;
-      align-items: center;
-      border-left: 2px solid #989898;
-    }
     & li{
       padding-top: 15px;
       padding-bottom: 15px;
@@ -89,6 +88,9 @@ body{
       width: 128px;
       text-align: center;
       position: relative;
+      background-image: url(../image/nav-no-hover-2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
       & a{
         text-decoration: none;
         color: #66402b;
@@ -102,15 +104,22 @@ body{
         display: none;
         & li{
           width: auto;
+          background-image: none;
           background-color: #FFC472;
           border-bottom: 1px solid #D8A260;
           border-radius: 0;
           font-size: 12px;
+          & a{
+            color: #66402b;
+          }
         }
         & li:hover{
-          background-color: #FFC472;
-          background-size: 90% 90%;
+          background-image: url(../image/pic_menu_bg.png);
+          background-size: 90% 80%;
           background-position: center;
+          & a{
+            color: white;
+          }
         }
       }
     }
@@ -118,8 +127,8 @@ body{
       & a{
         color: white;
       }
-      background-image: url(../image/pic_menu_bg.png);
-      background-size: cover;
+      background-image: url(../image/nav-hover.png);
+      background-size: contain;
       background-repeat: no-repeat;
       cursor: pointer;
     }
@@ -156,7 +165,8 @@ body{
   height: auto;
   padding-bottom: 42px;
   .content__news{
-    width: 76%;
+    max-width: 701px;
+    width: 100%;
     padding-right: 30px;
     &__block-1{
       margin-bottom: -24px;
@@ -269,7 +279,7 @@ body{
       }
       & .special-link:before{
         content: "\25B6";
-        font-size: 10px;
+        font-size: 6px;
         margin-right: 5px;
       }
       & .special-link:hover{
@@ -295,29 +305,11 @@ body{
     }
   }
   .content__slide{
-    width: 24%;
+    max-width: 231px;
+    width: 100%;
     &__block-1{
       width: 100%;
-      overflow: hidden;
-      position: relative;
-      border-radius: 2px;
-      border: 1px solid #f0831e;
       margin-bottom: 6px;
-      &__text{
-        width: 100%;
-        padding-left: 19px;
-        position: absolute;
-        top: 75px;
-        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-        & h3{
-          font-size: 17px;
-          margin-bottom: 15px;
-        }
-        & p{
-          font-size: 13px;
-          padding-right: 46px;
-        }      
-      }
     }
     &__block-2{
       width: auto;
@@ -337,7 +329,7 @@ body{
           font-weight: lighter;
           padding-bottom: 5px;
           border-bottom: 2px solid #f0831e;
-          margin-bottom: 18px;
+          margin-bottom: 10px;
         }
         &__list{
           font-size: 14px;
@@ -348,10 +340,13 @@ body{
             margin-bottom: 5px;
           }
           & p:before{
-            content: "\25CE";
-            font-size: 15px;
-            font-weight: bold;
-            color: #f0831e;
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            border: 3px solid #f0831e;
+            margin-right: 10px;
           }
           & ul{
             font-size: 12px;
@@ -372,34 +367,11 @@ body{
     }
     &__block-3{
       width: auto;
-      position: relative;
       margin-bottom: 17px;
-      & p{
-        font-size: 18px;
-        position: absolute;
-        top: 30px;
-        left: 20px;
-        font-weight: bold;
-      }
     }
     &__block-4{
       width: auto;
-      position: relative;
       margin-bottom: 22px;
-      &__text{
-        padding-left: 20px;
-        padding-right: 33px;
-        position: absolute;
-        top: 26px;
-        & h3{
-          font-size: 17px;
-          margin-bottom: 17px;
-        }
-        & p{
-          font-size: 13px;
-          line-height: 18px;
-        }
-      }
     }
     &__block-5{
       width: auto;
@@ -533,10 +505,13 @@ body{
       margin-bottom: 10px;
     }
     & p:before{
-      content: "\25CE";
-      font-size: 15px;
-      font-weight: bold;
-      color: #f0831e;
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      border: 3px solid #f0831e;
+      margin-right: 10px;
     }
     & ul{
       padding: 0;
@@ -572,10 +547,19 @@ body{
     width: 100%;
   }
   .navbar{
+    & .ipad-menu{
+      display: block;
+      & i{
+        font-size: 20px;
+        margin-left: 20px;
+      }
+    }
     & ul{
+      display: none;
       & li{
         & .dropdown{
-          padding-top: 26%;
+          right: -100%;
+          top: -55%;
         }
       }
     }
@@ -590,13 +574,14 @@ body{
     }
   }
   .content .container--iner{
-    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
     .content__news{
-      width: 100%;
+      width: auto;
       padding-right: 0;
     }
     .content__slide{
-      width: 100%;
+      width: auto;
       &__block-1{
         height: 164px;
         overflow: hidden;
@@ -631,21 +616,21 @@ body{
         }
       }
       &__block-5{
-        &__content__text{
-          & h2{
-            font-size: 40px;
-          }
-          & h2::before{
-            margin-right: 3%;
-          }
-          & h3{
-            font-size: 35px;
-          }
-          & p{
-            font-size: 30px;
-            line-height: 150%;
-          }
-        }
+        // &__content__text{
+        //   & h2{
+        //     font-size: 40px;
+        //   }
+        //   & h2::before{
+        //     margin-right: 3%;
+        //   }
+        //   & h3{
+        //     font-size: 35px;
+        //   }
+        //   & p{
+        //     font-size: 30px;
+        //     line-height: 150%;
+        //   }
+        // }
       }
     }
   }
@@ -673,28 +658,14 @@ body{
 /* iphone */
 @media screen and (max-width: 480px){
   .header{
-    &__top{
-      & p{
-        font-size: 10px;
-      }
-    }
-    &__content{
-      &__logo{
-        & img {
-          width: 40%;
-        }
-      }
-      &__info{
-        & p{
-          font-size: 10px;
-          line-height: 100%;
-        }
-      }
-    }
+    display: none;
   }
   .navbar{
     & ul{
       font-size: 60%;
+      & li:hover{
+        background-size: cover;
+      }
       & li{
         padding-top: 1%;
         padding-bottom: 1%;
@@ -741,8 +712,8 @@ body{
       }
       &__block-2{
        &__list{
-         flex-direction: column;
-         align-items: center;
+         flex-wrap: wrap;
+         justify-content: space-around;
          width: 100%;
          &__item{
            margin-bottom: 5%;
@@ -754,51 +725,6 @@ body{
            }
          }
        } 
-      }
-    }
-    .content__slide{
-      &__block-3{
-        & img{
-          width: 100%;
-        }
-        & p{
-          font-size: 30px;
-          top: 40%;
-          left: 10%;
-        }
-      }
-      &__block-4{
-        &__text{
-          top: 12%;
-          left: 8%;
-        }
-        & img{
-          width: 100%;
-        }
-        & h3{
-          font-size: 30px;
-        }
-        & p{
-          font-size: 20px;
-          line-height: 150%;
-        }
-      }
-      &__block-5{
-        &__content__text{
-          & h2{
-            font-size: 30px;
-          }
-          & h2::before{
-            margin-right: 3%;
-          }
-          & h3{
-            font-size: 35px;
-          }
-          & p{
-            font-size: 20px;
-            line-height: 150%;
-          }
-        }
       }
     }
   }
@@ -832,51 +758,6 @@ body{
         & p{
           font-size: 12px;
           width: 22%;
-        }
-      }
-    }
-    .content__slide{
-      &__block-3{
-        & img{
-          width: 100%;
-        }
-        & p{
-          font-size: 20px;
-          top: 40%;
-          left: 10%;
-        }
-      }
-      &__block-4{
-        &__text{
-          top: 12%;
-          left: 8%;
-        }
-        & img{
-          width: 100%;
-        }
-        & h3{
-          font-size: 20px;
-        }
-        & p{
-          font-size: 15px;
-          line-height: 150%;
-        }
-      }
-      &__block-5{
-        &__content__text{
-          & h2{
-            font-size: 20px;
-          }
-          & h2::before{
-            margin-right: 3%;
-          }
-          & h3{
-            font-size: 20px;
-          }
-          & p{
-            font-size: 15px;
-            line-height: 150%;
-          }
         }
       }
     }
