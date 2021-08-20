@@ -1,0 +1,34 @@
+@import "../variable/variable";
+
+.header{
+  color: $color-gray;
+  text-align: right;
+  margin-bottom: 22px;
+  .block{
+    display: inline-block;
+    .header__top{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 18px;
+      padding-bottom: 5px;
+      border-bottom: 2px dotted;
+      & p{
+        font-size: 11px;
+        margin-right: 10px;
+      }
+      .phone{
+        display: flex;
+        font-size: 21px;
+        & i{
+          margin-right: 5px;
+        }
+        & p{
+          margin: 0;
+          font-size: inherit;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}
