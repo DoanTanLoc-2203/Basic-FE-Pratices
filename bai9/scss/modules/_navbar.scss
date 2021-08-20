@@ -1,0 +1,73 @@
+@import "../variable/variable";
+
+.navbar{
+  color: $color-gray;
+  margin-bottom: 26px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ipad-menu{
+    padding-right: 20px;
+    & i{
+      font-size: 40px;
+    }
+    display: none;
+  }
+  .slogan{
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+  .menu{
+    display: flex;
+    &__item:hover{
+      cursor: pointer;
+    }
+    &__item{
+      padding-left: 17px;
+      padding-right: 21px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-left: 1px solid #B4B1B0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & h4{
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #2e2e2e;
+        height: 19px;
+      }
+      & p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10px;
+        color: #9e9e9f;
+      }
+    }
+  }
+
+}
+
+
+
+@media screen and (max-width: 823px){
+  .navbar{
+    position: relative;
+    margin-bottom: 0;
+    .ipad-menu{
+      display: block;
+    }
+    .slogan{
+      padding-left: 10px;
+    }
+    .menu{
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      z-index: 1;
+      background-color: white;
+    }
+  }
+}

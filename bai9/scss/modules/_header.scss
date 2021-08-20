@@ -1,0 +1,37 @@
+@import "../variable/variable";
+
+.header{
+  color: $color-gray;
+  text-align: right;
+  margin-bottom: 14px;
+  .block{
+    display: inline-block;
+    .header__top{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 13px;
+      padding-bottom: 5px;
+      border-bottom: 2px dotted $bg-color-gray;
+      & p{
+        font-size: 11px;
+        margin-right: 10px;
+        color: #5c4e49;
+      }
+      .phone{
+        display: flex;
+        font-size: 21px;
+        align-items: center;
+        & img{
+          margin-right: 5px;
+        }
+        & p{
+          color: #372823;
+          margin: 0;
+          font-size: inherit;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}

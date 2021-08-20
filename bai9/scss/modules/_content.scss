@@ -1,0 +1,134 @@
+
+.content{
+  margin-bottom: 3px;
+  img{
+    margin-bottom: 14px;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left{
+    max-width: 331px;
+    width: 100%;
+    & .time{
+      width: 331px;
+      height: 213px;
+      background-image: url(../../img/time-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: none;
+      margin-bottom: 14px;
+      & h3{
+        font-size: 20px;
+        font-weight: lighter;
+        display: inline-block;
+        letter-spacing: 4px;
+        margin-top: 28px;
+        margin-left: 32px;
+        color: #372823;
+      }
+      & h4{
+        font-size: 12px;
+        font-weight: lighter;
+        display: inline-block;
+        letter-spacing: 0.5px;
+        margin-left: 88px;
+        color: #747474;
+      }
+      & img{
+        margin: auto;
+        margin-top: 18px;
+      }
+      & p{
+        font-size: 11px;
+        margin-top: 3px;
+        margin-left: 29px;
+        letter-spacing: 0.9px;
+    
+      }
+    }
+    & .map{
+      width: 331px;
+      height: 245px;
+      padding: 12px;
+      background-color: $bg-color-gray-light;      
+      margin-bottom: 14px;
+      & img{
+        margin-bottom: 7px;
+      }
+      &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+        & h4{
+          width: 180px;
+          font-size: 12px;
+          font-weight: lighter;
+          color: black;
+        }
+        & p{
+          color: #2e2e2e;
+          display: inline-block;
+          width: 68px;
+          height: 26px;
+          font-size: 11px;
+          text-align: center;
+          line-height: 26px;
+          background-image: url(../../img/bg-txt.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    & .map-ct{
+      width: 331px;
+      height: 86px;
+      padding-top: 27px;
+      padding-left: 31px;
+      padding-bottom: 33px;
+      margin-bottom: 14px;
+      background-image: url("../../img/map-bg-ct.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      & p{
+        font-size: 20px;
+        display: inline-block;
+      }
+    }
+  }
+  &__right{
+    max-width: 677px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .content{
+    .container{
+      flex-direction: column-reverse;
+    }
+    &__left{
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 664px){
+  .content{
+    &__right{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
