@@ -1,0 +1,62 @@
+@import "../variable/variable";
+
+.header{
+  &__top{
+    width: 100%;
+    background-color: $color-red;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
+  &__bot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__info{
+      padding-top: 24px;
+      padding-bottom: 18px;
+      &__text{
+        font-size: 13px;
+        color: $color-gray-light;
+        font-weight: bold;
+        text-align: right;
+      }
+      &__phone{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 30px;
+      }
+      &__button{
+        display: flex;
+        align-items: center;
+        & .btn-item:hover{
+          border-color: black;
+        }
+        & .btn-item{
+          display: flex;
+          align-items: center;
+          font-size: 13px;
+          font-weight: bold;
+          padding: 8px 11px 7px 10px;
+          margin-left: 6px;
+          border: 1px solid $color-gray-lightx2;
+          border-radius: 100vh;
+          background-image: url(../../img/pic_img-shadow.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          & i{
+            color: $color-red;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    display: none
+  }
+}
